@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma;
+  background-image: url(./images/criptomonedas.png);
+}
+
+.main {
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  width: 60%;
+  box-shadow: rgba(154, 154, 192, 0.2) 0px 7px 29px 0px;
+  height: 85vh;
+}
+
+.main h1 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: rgb(32, 32, 90);
+  border-radius: 25px;
+  width: 40vw;
+  margin: auto;
+  height: 80vh;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 50%;
+  margin-top: 2%;
+  margin-bottom: 25px;
+}
+
+.form form#form-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.form #form-search select {
+  font-size: inherit;
+  margin: 8px 0px 7px;
+  background-color: aliceblue;
+  padding: 8px 5px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 7px;
+  border: solid 1px #ada2a2;
+  color: #736d6d;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h2:hover {
+  color: white;
+}
+
+input[type="submit"] {
+  margin: 9px auto 0px;
+  width: 50%;
+  color: cadetblue;
+  background-color: #a299c4;
+  border: solid 0px #ada2a2;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 7px 3px;
+  color: #fff;
+  height: 37px;
+  font-family: sans-serif;
+}
+
+input[type="submit"]:hover {
+  color: #59f7cc;
+  background-color: #fff;
+  border: solid 2px #00a478;
+  cursor: pointer;
+}
+
+.error {
+  color: white;
+  font-family: Verdana;
+}
+
+.display-info p span {
+  font-weight: 400;
+  color: white;
+  font-family: fantasy;
+}
+
+.display-info .main-price {
+  font-size: 18px;
+  margin-bottom: 1px;
+  color: rgb(247, 169, 169);
+  font-family: cursive;
+}
+
+select {
+  cursor: pointer;
+}
+
+p {
+  font-weight: 400;
+  color: white;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: flex;
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  h2 {
+    font-size: 15px;
+    color: rgb(199, 80, 80);
+  }
+
+  input[type="submit"] {
+    margin: 9px auto 0px;
+    width: 70%;
+    height: 20%;
+    color: rgb(152, 95, 160);
+    background-color: #a299c4;
+    border: solid 0px #ada2a2;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 7px 3px;
+    color: rgb(99, 252, 94);
+    height: 37px;
+    font-family:  sans-serif;
+  }
+
+  select {
+    width: 150%;
+    font-size: 5px;
+  }
+
+  .form {
+    width: 50%;
+    height: 80%;
+    margin-top: 2%;
+    margin-right: 25px;
+  }
+
+  .form form#form-search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    font-weight: 400;
+    color: rgb(247, 14, 14);
+    font-family: cursive;
+    font-size: 12px;
+  }
+
+  span {
+    font-size: 8px;
+    color: #ada2a2;
+  }
+}
